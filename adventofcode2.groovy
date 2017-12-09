@@ -1,16 +1,27 @@
-amountofpaper(def medidas){
- l = 0
-      w = 0
-      h = 0
-  for(i=0; i=medidas.size(); i+
-  }
+lista = [1,1,10]
+
+def smaller(def numbersmall){
+    memoria = lista[0]
+    for(i=0; i<lista.size();i++){
+      if(lista [i] <  memoria){
+        memoria = lista[i]
+      }
+    }
+   return memoria
 }
 
-amountofpaper()
 
+def amountofpaper(def medidas){
+      amount = 0
+      l = medidas[0]
+      w = medidas[1]
+      h = medidas[2]
+      amount = 2*(l*w)+2*(w*h)+2*(h*l)
+      return amount
+}
 
+def numbersamaller = smaller(lista)
+def paper = amountofpaper(lista)
 
-smallestArea(def)
-
-
-def lwh = medidas (234)
+println paper
+println numbersamaller
