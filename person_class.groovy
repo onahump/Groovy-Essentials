@@ -20,7 +20,7 @@ class Person{
 
 }
 
-//Creando una nueva variable de instancia de la clase Persona
+//Creando una instancia de la clase Persona y asignacion de valores a cada propiedad
 def david = new Person( name: 'David', email: 'david@makingdevs.com')
 
 //Cambiando el correo
