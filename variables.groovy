@@ -11,5 +11,15 @@ def number, number2 //Variables oneline
 assert number == 10
 assert number2 == 20
 
+def num, num2, num3  //three variables
+(num,num2,num3) = [21,10] //Just assigned 2 i
+
+assert num == 21
+assert num2 == 10
+assert num3 == null
+
+
+
+
 
 
