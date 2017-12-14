@@ -24,7 +24,7 @@ class Person{
 def david = new Person( name: 'David', email: 'david@makingdevs.com')
 
 //Cambiando el correo
-david.setEmail('davy@perro.com')
+//david.setEmail('davy@perro.com')
 
 println david.getName()
 println david.getEmail()
