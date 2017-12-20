@@ -1,10 +1,12 @@
-lista = [1,1,10]
+lista = "12x3x2"
+splitingLista = lista.split('x')
+
 
 def smaller(def numbersmall){
-    memoria = lista[0]
-    for(i=0; i<lista.size();i++){
-      if(lista [i] <  memoria){
-        memoria = lista[i]
+    memoria = splitingLista[0]
+    for(i=0; i<splitingLlista.size();i++){
+      if(splitingLista [i] <  memoria){
+        memoria = splitingLista[i]
       }
     }
    return memoria
@@ -20,8 +22,8 @@ def amountofpaper(def medidas){
       return amount
 }
 
-def numbersamaller = smaller(lista)
-def paper = amountofpaper(lista)
+def numbersamaller = smaller(splitingLista)
+def paper = amountofpaper(splitingLista)
 
 println paper
 println numbersamaller
