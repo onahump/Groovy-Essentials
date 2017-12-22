@@ -18,8 +18,10 @@ def getDimensionsList(def textFile){
       def smallestPerimeter = Math.min(p1,Math.min(p2,p3))
       def bowOfRibbon = boxDimensions[0] * boxDimensions[1] * boxDimensions[2]
       def totalRibbon = smallestPerimeter + bowOfRibbon
+      println totalRibbon
       total.add(totalRibbon)
     }
+
   println total.sum()
 
 
