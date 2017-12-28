@@ -9,7 +9,7 @@ println santaPosition.x.getClass()
 
 
 def readFile(def file){
-    file.each{ i ->
+    file.text.each{ i ->
       println i
     }
 }
