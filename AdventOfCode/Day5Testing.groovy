@@ -4,15 +4,15 @@ class Day5Testing extends GroovyTestCase{
 
 
 	void testOne(){
-		assert helper.isNaughty("ugknbfddgicrmopn") == "naughty"
+		assert helper.isNaughty("ugknbfddgicrmopn") 
 	} 
 
 	void testTwo(){
-		assert helper.isNaughty2("abcdefghii") == "naughty"
+		assert helper.isNaughty2("abcdefghii")
 	}
 	
 	void testThree(){
-		assert helper.isNaughty3("oipciqolm") == "naughty"
+		assert helper.isNaughty3("oipciqolm")
 	}
 
 }
@@ -23,36 +23,32 @@ class Helper{
 		def regex = ~/[aeiouAEIOU]/
 		 // ~/([a-z])\1/ 
 		if (linea.findAll(regex)){
-			linea  = "naughty"
+			true
 		}
 		else{
-			linea = "nice"
+			false
 		}
-	linea
 	}
 
 	def isNaughty2(String linea){
 		def regex = ~/([a-z])\1/ 
 		if (linea.findAll(regex)){
-			linea  = "naughty"
+			true
 		}
 		else{
-			linea = "nice"
+			false
 		}
-	linea
 	}
 
 
 	def isNaughty3(String linea){
-		def regex = ~/^a*b*c*d*e*f*g*h*i*j*k*l*m*n*o*p*q*r*s*t*u*v*w*x*y*z*+/ 
+		def regex = ~/[ab|bc]/
 		if (linea.findAll(regex)){
-		    linea  = "naughty"
+			true
 		}
 		else{
-		    linea = "nice"
+			false
 		}
-		print linea
-	}
 }
 
 
