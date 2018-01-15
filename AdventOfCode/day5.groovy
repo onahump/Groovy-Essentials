@@ -1,17 +1,15 @@
-def nice = []
-def naughty = []
+def regex = ~/[aeiou].*[aeiou].*[aeiou]|([a-z])\1/	
+def naughty = 0
+def nice = 0  
 
 def txt = new File("day5.txt").eachLine { line ->
-	for(i in 0..<line.size()){
-		if (line[i] == "a") {
-			nice << line
-			break
-		}
-		else{
-			naughty << line
-		}
+	if(line.findAll(regex)){
+		nice ++
+	}
+	else{
+		naughty ++
 	}
 }
 
-println nice
-println naughty
+println "Nice: ${nice}"
+println "Naughty: ${naughty}"
