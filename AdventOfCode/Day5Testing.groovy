@@ -4,15 +4,15 @@ class Day5Testing extends GroovyTestCase{
 
 
 	void testOne(){
-		assert helper.isNaughty("ugknbfddgicrmopn") 
+		assert helper.isNaughty("ugikpan") == true
 	} 
 
 	void testTwo(){
-		assert helper.isNaughty2("abcdefghii")
+		assert helper.isNaughty2("abcdefghhhhi") == true
 	}
 	
 	void testThree(){
-		assert helper.isNaughty3("oipciqolm")
+		assert helper.isNaughty3("oipciqolxm") == true
 	}
 
 }
@@ -20,8 +20,7 @@ class Day5Testing extends GroovyTestCase{
 class Helper{
 
 	def isNaughty(String linea){
-		def regex = ~/[aeiouAEIOU]/
-		 // ~/([a-z])\1/ 
+		def regex = ~/[aeiou].*[aeiou].*[aeiou]/
 		if (linea.findAll(regex)){
 			true
 		}
@@ -42,13 +41,12 @@ class Helper{
 
 
 	def isNaughty3(String linea){
-		def regex = ~/[ab|bc]/
+		def regex = ~/ab|bc|pq|xy/
 		if (linea.findAll(regex)){
 			true
 		}
 		else{
 			false
 		}
+	}
 }
-
-
