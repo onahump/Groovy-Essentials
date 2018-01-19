@@ -1,7 +1,5 @@
 def nice = 0
 def txt = new File("day5.txt").eachLine{ linea ->
-
-
 	linea.size().times{
 		if( it != linea.size()-1 ){
         	if( linea[it] == linea[it+1]){
