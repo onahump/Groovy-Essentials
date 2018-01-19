@@ -31,7 +31,6 @@ class Helper{
 		doble
 	}
 
-
 	def pairOfTwoLettersDouble(String linea){
 		def regex = ~/\w*(\w{1})\w\1/ 
 		if (linea.findAll(regex)){
