@@ -1,9 +1,0 @@
-<servlet>
-    <servlet-name>Groovy</servlet-name>
-    <servlet-class>groovy.servlet.GroovyServlet</servlet-class>
-</servlet>
-
-<servlet-mapping>
-    <servlet-name>Groovy</servlet-name>
-    <url-pattern>*.groovy</url-pattern>
-</servlet-mapping>
